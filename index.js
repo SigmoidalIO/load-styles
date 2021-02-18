@@ -15,6 +15,8 @@ module.exports = loadStyles;
 function loadStyles(css, doc) {
   // default to the global `document` object
   if (!doc) doc = document;
+  if (!doc)
+	return;
 
   var head = doc.head || doc.getElementsByTagName('head')[0];
 
